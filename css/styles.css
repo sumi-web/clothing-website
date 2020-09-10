@@ -774,3 +774,9 @@ footer h3 {
     visibility: hidden;
   }
 }
+
+@media(max-width:768px) {
+  .nav-content {
+    margin: 10px auto;
+  }
+}
