@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Grace</title>
+  <!---------font awesome-------------- -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <!-- -------bootsrap css------------ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <!-- -----custom css------ -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/hover.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+  <header class="container-fluid head">
+    <!------------- first navbar ------------>
+    <nav class="bg-white nav-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <h1 class="site-name">
+              <a href="#"><span class="head-span">D</span>ark Grace</a>
+            </h1>
+          </div>
+          <div class="col-lg-5 col-md-4 search-div">
+            <form class="search">
+              <input class="form-control" type="search" placeholder="Search here.." aria-label="Search" />
+              <button><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-5 div-user">
+            <div class="user panel" style="display: flex">
+              <div class="up-item"><i class="far fa-user user-font"></i> <a class="sign-in" href="#">Sign in</a> or <a
+                  href="#">create
+                  account</a></div>
+              <div class="up-item cart-btn">
+                <i class="fas fa-cart-arrow-down user-font"></i><span class="cart-count">0</span> <a
+                  href="cart.html">Shopping Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- --------------Modal1 sign in--------------- -->
+  <div class="container-fluid modal-bg">
+    <span class="cross">X</span>
+    <div class="row modal-1">
+
+      <div class="col-md-8 mod-sign">
+        <h3> <span class="sign-now"> Sign In</span> Now</h3>
+        <form action="#">
+          <div class="email-signin mod-sign">
+            <input type="Email" name="email" required>
+            <label for="">Email</label>
+          </div>
+          <div class="sigin-pass mod-sign">
+            <input type="password" name="password" required aria-autocomplete="list">
+            <label for="">Password</label>
+          </div>
+        </form>
+        <button class="hvr-grow" type="button">Sign In</button>
+      </div>
+      <div class="col-md-4">
+
+        <img src="images/pexels-liza-rahman-1766055.jpg" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+  <!------------ second navbar ----------->
+  <nav class="navbar navbar-expand-lg nav-2">
+    <div class="container">
+      <button style="background-color: #4cd3c2" class="navbar-toggler btn-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Men's Wear
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Top Wear</a>
+              <a class="dropdown-item" href="#">Bottom Wear</a>
+              <a class="dropdown-item" href="#">Shoes</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Women's Wear
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Top Wear</a>
+              <a class="dropdown-item" href="#">Bottom Wear</a>
+              <a class="dropdown-item" href="#">Shoes</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Kid's Wear
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Top Wear</a>
+              <a class="dropdown-item" href="#">Bottom Wear</a>
+
+              <a class="dropdown-item" href="#">Shoes</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!---------- Home  carousel-------------->
+  <section class="sec-carousel" id="Home">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/black-and-white-2558273_1920.jpg" class="d-block w-100" alt="First pic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>LAUNCHING NEW <span class="cap-span">SEASON</span></h1>
+            <p>Autumn/Winter'20 Collection</p>
+            <span class="hvr-outline-out car-span">Shop Now</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/pexels-freestocksorg-285171.jpg" class="d-block w-100" alt="second pic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>THE BIGGEST <span class="cap-span"> SALE</span></h1>
+            <p>New Arrivals On Sale</p>
+            <span class="hvr-outline-out car-span">Shop Now</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/people-2599980_1920.jpg" class="d-block w-100" alt="third pic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>WINTER <span class="cap-span"> COLLECTION</span></h1>
+            <p>Special For Today</p>
+            <span class="hvr-outline-out car-span">Shop Now</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/clothing-store-984396_1920.jpg" class="d-block w-100" alt="fourth pic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>LAUNCHING NEW <span class="cap-span">SEASON</span></h1>
+            <p>New Arrivals On Sale</p>
+            <span class="hvr-outline-out car-span">Shop Now</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/people-25574831.jpg" class="d-block w-100" alt="fifth pic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>THE BIGGEST <span class="cap-span">SALE</span></h1>
+            <p>Autumn/Winter'20 Collection</p>
+            <span class="hvr-outline-out car-span">Shop Now</span>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev cor-a-left" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="fas fa-chevron-left cor-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next cor-a-right" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="fas fa-chevron-right cor-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+  <!------------ MART ----------->
+  <section class="banners" id="#">
+    <h1 style="color: #000; font-weight: 800">MART</h1>
+    <div class="container">
+      <div class="row row-banners">
+        <div class="col-lg-6 col-md-6">
+          <figure class="hvr-trim trim-1">
+            <img src="Images/store-984393_1920.jpg" alt="" width="100%" />
+            <figcaption class="mart-figcaption">
+              <h3><span class="caption-span">F</span>ALL AHEAD</h3>
+              <p>New Arrivals</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <figure class="hvr-trim trim-1">
+            <img src="images/uniqlo-17376631_1920.jpg" alt="" width="100%" />
+            <figcaption class="mart-figcaption">
+              <h3><span class="caption-span">F</span>ALL AHEAD</h3>
+              <p>New Arrivals</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="mart">
+    <div class="container-fluid mart-contaier">
+      <div class="row">
+        <div class="col-lg-6" style="padding: 0">
+          <figure>
+            <img src="Images/pexels-edgars-kisuro-1488463.jpg" alt="" width="100%" />
+          </figure>
+        </div>
+        <div class="col-lg-6 feedback">
+          <div class="feedback-div">
+            <h4>Save Upto <span style="color: #e7305b">50% </span> in this week</h4>
+            <p>
+              Suspendisse varius turpis efficitur erat laoreet dapibus. Mauris sollicitudin scelerisque commodo.Nunc
+              dapibus mauris sed
+              metus finibus posuere.
+            </p>
+            <div class="container users">
+              <div class="col-md-4">
+                <i class="fas fa-users"></i>
+                <span>Customers</span>
+                <h5 class="user">675</h5>
+              </div>
+              <div class="col-md-4">
+                <i class="far fa-calendar"></i>
+                <span>Events</span>
+                <h5>555</h5>
+              </div>
+              <div class="col-md-4">
+                <i class="fas fa-award"></i>
+                <span>Awards</span>
+                <h5>45</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------- what's trending ------------>
+  <section class="whats-trending">
+    <div class="container">
+      <h1 class="what-h1"><span style="font-weight: 800; color: #000">WHAT"S</span> TRENDING</h1>
+      <div class="row">
+        <div class="col-lg-5">
+          <figure class="hvr-trim trending-trim1">
+            <img src="Images/model-3585262_1920.jpg" alt="" width="100%" />
+            <figcaption class="trending-figcaption1">
+              <h3><span>S</span>ALE</h3>
+              <h4>Upto 55%</h4>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-7 tren-img">
+          <figure class="hvr-trim trending-trim2">
+            <img src="images/interview-22113541_1920.jpg" alt="" width="100%" />
+            <figcaption class="trending-figcaption2">
+              <h3><span>S</span>ALE</h3>
+              <h4>Upto 55%</h4>
+            </figcaption>
+          </figure>
+          <figure class="hvr-trim trending-trim3 trending-img">
+            <img src="images/blue-25646601_1920.jpg" alt="" width="100%" />
+            <figcaption class="trending-figcaption3">
+              <h3><span>S</span>ALE</h3>
+              <h4>Upto 55%</h4>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid trending-container2">
+      <div class="row">
+        <div class="col-lg-6" style="padding: 0">
+          <figure>
+            <img src="Images/doodoosonic-0t7PNNZlTC01-unsplash.jpg" alt="" width="100%" />
+            <figcaption class="tren-figcaption">
+              <h3>Flat <span>50%</span>offer</h3>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-6" style="padding: 0">
+          <figure>
+            <img src="Images/fashion-1979136_1920.jpg" alt="" width="100%" />
+            <figcaption class="tren-figcaption">
+              <h3>Flat <span>50%</span>offer</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------- New Arrivals ---------->
+  <section class="container new-arrivals">
+    <h1 class="arrival-h1"><span>NEW</span> ARRIVALS</h1>
+    <div class="container">
+      <div class="row arrival-row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <h4 class="men">MEN'S</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <h4 class="women">WOMEN'S</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <h4 class="kid">KID'S</h4>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <h4 class="footwear">FOOTWEAR</h4>
+        </div>
+      </div>
+    </div>
+    <!---------- first product row ------------>
+    <div class="container product-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img1"
+                src="images/a8acac3a-077a-400f-a1c7-519215a5265e1537251707732-Roadster-Men-Blue-Denim-Washed-Casual-Shirt-5281537251705552-1.jpg"
+                alt="" width="80%" />
+              <figcaption>
+                <h6 class="pro1">Casual Denim Shirt</h6>
+                <p class="price1">Rs. 900 <span class="pro-span">Rs.1499</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img2"
+                src="Images/60785496-7974-463b-b604-634d33ce6cde1599120622296-BEAT-LONDON-by-PEPE-JEANS-Men-Jeans-6291599120620590-1.jpg"
+                alt="" width="80%" />
+              <figcaption>
+                <h6 class="pro2">Slim Fit Jeans</h6>
+                <p class="price2">Rs. 800 <span class="pro-span">Rs.1299</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img3"
+                src="Images/7b9db4fb-317c-4ce9-ae30-e7522a89911d1568451555200-HERENOW-Men-Sweatshirts-6561568451553655-1.webp"
+                alt="" width="80%" />
+              <figcaption>
+                <h6 class="pro3">Printed Sweatshirt</h6>
+                <p class="price3">Rs. 999 <span class="pro-span">Rs.1499</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!------- second product row -------->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img4"
+                src="images/db444c48-c8aa-4fc3-92b4-02b66f4643dd1545820130218-Armani-Exchange-Men-Black-Analogue-Watch-6211545820128996-1.webp"
+                alt="" width="80%" />
+              <figcaption>
+                <h6 class="pro4">Analog Watch</h6>
+                <p class="price4">Rs. 4299 <span class="pro-span">Rs.8999</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img5"
+                src="Images/11449479796670-INVICTUS-Red--Navy-Checked-Slim-Formal-Shirt-4621449479796242-1.webp" alt=""
+                width="80%" />
+              <figcaption>
+                <h6 class="pro5">Checked Formal Shirt</h6>
+                <p class="price5">Rs. 899 <span class="pro-span">Rs.1999</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <figure>
+              <img class="img6"
+                src="Images/d0945f5f-bb57-45a6-9615-7aea74707d201586861228235-ADIDAS-Men-Navy-Sedna-Running-Shoes-7821586861226106-1.webp"
+                alt="" width="80%" />
+              <figcaption>
+                <h6 class="pro6">Running Shoes</h6>
+                <p class="price6">Rs. 2359 <span class="pro-span">Rs.4299</span></p>
+                <p class="hvr-outline-out pro-p">Buy Now</p>
+                <span class="pro-new">New</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------- sale wall -------->
+  <section>
+    <div class="container-fluid sale-img">
+      <div class="container">
+        <h1>We Offer Flat <span>50%</span> Discount</h1>
+        <p class="hvr-outline-out">Shop Now</p>
+      </div>
+    </div>
+  </section>
+
+  <!----------- Coupens----------->
+  <section>
+    <div class="container-fluid coupens">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-truck"></i>
+          <h5>FREE SHIPPING</h5>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-headphones"></i>
+          <h5>24/7 SUPPORT</h5>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-shopping-bag"></i>
+          <h5>MONEY BACK GAURANTEE</h5>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <i class="fas fa-gift"></i>
+          <h5>FREE GIFT COUPENS</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============footer============== -->
+  <footer>
+    <div class="conatiner-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3><span class="footer-d">D</span>ark Grace</h3>
+          <p class="foo-p">
+            Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed ipsum dolor quia non numquam eius modi
+            tempora.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3><span class="footer-span">OUR</span> INFORMATION</h3>
+          <div class="container info-p">
+            <p>Home</p>
+            <p>Men's Wear</p>
+            <p>Women's Wear</p>
+            <p>Kid's Wear</p>
+            <p>Offers</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <!-- ----------store information---------- -->
+        <div class="col-lg-4 col-md-6">
+          <h3><span class="footer-span">STORE</span> INFORMATION</h3>
+          <div class="address">
+            <div class="address-1 store-info">
+              <div class="phone-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="information">
+                <h5>Phone Number</h5>
+                <p>+12 34 567 8901</p>
+              </div>
+            </div>
+            <div class="address-2 store-info">
+              <div class="phone-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="information">
+                <h5>Email Addres</h5>
+                <p>Email: <span>example@gmail.com</span></p>
+              </div>
+            </div>
+            <div class="address-3 store-info">
+              <div class="phone-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="information">
+                <h5>Location</h5>
+                <p>Broome st Dl 110090, INDIA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------News Letter--------------- -->
+    <div class="container-fluid news">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 letter">
+          <h4>SIGN UP FOR NEWS LETTER!!</h4>
+        </div>
+        <div class="col-lg-6 col-md-6 newsright">
+          <form action="#">
+            <input type="email" placeholder="Enter Youe Email.." />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- -------------Copyright---------------------- -->
+    <p class="copyright">© 2020 Dark Grace. All rights reserved | Design BY <span>Sumi</span></p>
+
+    <!-- --------------Back to top---------------------- -->
+    <div class="container"> <a href="#Home" class="top-link">
+        <i class="fas fa-arrow-circle-up"></i>
+      </a></div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>

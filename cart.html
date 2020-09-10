@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shpping Cart</title>
+  <!---------font awesome-------------- -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <!-- -------bootsrap css------------ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <!-- -----custom css------ -->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/hover.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+  <!-- ------shopping navbar-------------- -->
+  <nav class="shop-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 shop-content">
+          <h2> <a href="index.html">Home</a> </h2>
+        </div>
+        <div class="col-md-6">
+          <h1 class="site-name">
+            <a href="#"><span class="head-span">D</span>ark Grace</a>
+          </h1>
+        </div>
+        <div class="col-md-3 shop-content">
+          <i class="fas fa-cart-arrow-down shop-cart"></i><span class="cart-number cart-count">0</span> <a
+            class="shopping-cart" href="cart.html">Shopping
+            Cart</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ------Shopping menu------------ -->
+  <div class="cart-overlay container-fluid">
+    <div class="cart container-fluid">
+      <!-- <span class="close-cart"> <i class="far fa-times-circle"></i> </span> -->
+      <h2>Your Cart</h2>
+      <div class="cart-content container">
+        <div class="row cart-row">
+        </div>
+      </div>
+      <div class="cart-footer">
+        <h4>Cart Total : Rs <span class="cart-total">0</span></h4>
+        <button class="clear-cart banner-btn hvr-grow">CLEAR CART</button>
+      </div>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+
+</html>
