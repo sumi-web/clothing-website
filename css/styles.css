@@ -81,8 +81,8 @@ form button {
 
 .up-item span {
   position: absolute;
-  top: 0;
-  padding: 2px 6px 0 5px;
+  top: -5px;
+  padding: 4px 8px 2px 7px;
   background-color: #4cd3c2;
   border-radius: 50%;
   color: white;
@@ -767,4 +767,10 @@ footer h3 {
   border: 1px solid #4cd3c2;
   background-color: #4cd3c2;
   padding: 10px 2%;
+}
+
+@media(max-width: 1000px) {
+  .top-link {
+    visibility: hidden;
+  }
 }
